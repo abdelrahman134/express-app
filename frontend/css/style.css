@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 70px;
+    
+}
+nav{
+
+   padding: 5px 20px;
+   box-shadow: 0 4px 15px rgb(0,0,0,0.2);
+   background-color: #473BF0;
+   z-index: 2;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navitem{
+display: flex;
+gap: 20px;
+}
+nav a{
+    cursor: pointer;
+    position: relative;
+}
+nav a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+nav a:hover::before{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.hero{
+    height: 95vh;
+    background: url('../img/img-3.jpg') center/cover fixed no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.outline{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0,0,0,0.2);
+}
+
+.info{
+    text-align: center;
+z-index: 1;
+
+display: grid;
+gap: 10px;
+}
+.info h2{
+    color: white;
+    font-size: 70px;
+text-transform: capitalize;
+
+}
+.info p{
+    color: white;
+    opacity: 0.5;
+}
+.btn{
+display: inline;
+
+margin: 0 auto;
+text-transform: capitalize;
+padding: 15px 20px;
+border-radius: 10px;
+background-color: #F06543;
+color: white;
+cursor: pointer;
+border: none;
+transition: all 0.3s ease;
+}
+.info button:hover{
+    background-color: #232020;
+}
+.section1{
+    padding: 40px 20px;
+    text-align: center;
+  background-color: rgb(128, 128, 128,0.2);
+}
+.section1 h2{
+font-size: 40px;
+}
+.section1 img{
+    width: 100%;
+}
+.divider{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px 0;
+
+}
+.detail{
+    text-align: left;
+    padding: 40px 20px;
+    position:relative;
+  
+}
+.detail h4{
+    font-size: 50px;
+margin-top: 30px;
+}
+.detail button{
+    background-color: transparent;
+    border: none;
+    color: darkblue;
+    cursor: pointer;
+    margin-top:auto;
+    font-size: 15px;
+    text-transform: capitalize;
+   position: absolute;
+   bottom: 0;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #473BF0;
+    color: white;
+
+}
+footer img{
+    width: 25px;
+}
+.finfo{
+    display: grid;
+    gap: 20px;
+}
+.social{
+    display: grid;
+    gap: 20px;
+}
+footer button{
+    margin-left: 30px;
+}
+
+.about{
+    height: 90vh;
+    padding: 100px 0;
+    text-align: center;
+    background-color: rgb(168, 164, 164,0.3);
+
+}
+.about h2{
+    font-size: 50px;
+}
+.about p{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.contact{
+    padding: 100px 30px;
+       background-color: rgb(168, 164, 164,0.3);
+
+    }
+.contact h2{
+    text-align: center;
+    font-size: 60px;
+    
+}
+form{
+    display: grid;
+    background-color: white;
+    padding: 20px;
+    gap:10px;
+    height:600px;
+}
+input{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(11, 11, 11,0.3);
+
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+form h3{
+    font-size: 24px;
+    color: rgb(126, 122, 122,0.8);
+}
+.coninfo{
+height: 600px;
+background-color: #242423;
+padding: 30px;
+color: white;
+line-height: 2rem;
+}
+.section2{
+    padding: 90px 30px 30px 30px;
+  
+    text-align: center;
+    text-transform: capitalize;
+}
+.section2 h2{
+    font-size: 40px;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(320px,1fr));
+    gap: 10px;
+   margin-top: 30px;
+}
+.item{
+border: 2px solid rgb(9, 9, 9,0.4);
+padding: 20px;
+
+border-radius: 10px;
+}
+.item img{
+width: 100%;
+height:200px
+}
+.item .detail img{
+    width: 30px;
+height: 30px;
+}
+.service{
+    padding: 140px 30px 0 30px;
+display: grid;
+justify-content: center;   
+
+}
+.service img{
+width: 70%;
+border-radius: 15px;
+max-height: 600px;
+}
+.con{
+    position: relative;
+
+}
+.ser{
+    background-color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 50%;
+
+    border: 2px solid rgb(21, 21, 21,0.4);
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 40%;
+    right:20px;
+}
